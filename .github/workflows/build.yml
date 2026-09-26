@@ -22,6 +22,8 @@ jobs:
           context: .
           file: Dockerfile.cpu
           push: true
+          labels: |
+            org.opencontainers.image.source=https://github.com/BachErik/parakeet-tdt-0.6b-v3-fastapi-openai
           tags: |
             ghcr.io/bacherik/parakeet-tdt:${{ github.sha }}
             ghcr.io/bacherik/parakeet-tdt:latest
